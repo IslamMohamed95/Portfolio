@@ -1,0 +1,146 @@
+<section id="fullpage">
+    <section id="pg1" class="sec active carouselItem d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-capitalize w-75 text-white fw-bold">i'm freelancer bringing you programming and design from the future</h1>
+        <img src="../../../assets/pg1-Background.jpg" class="img-fluid" alt="">
+    </section>
+
+
+    <section id="pg2" class="sec carouselItem d-flex flex-column align-items-center justify-content-center active" #target>
+        <div >
+            <img src="../../../assets/Me.png" alt="Profile Pic" class="img-fluid userImg">
+        </div>
+        <div class="cont d-flex flex-column align-items-start justify-content-start">
+            <h1 class="text-white text-uppercase fw-bolde">about</h1>
+            <h3 class="text-warning">I'm <span class="auto-input"></span></h3>
+            <p class="text-white m-0 py-1">i'm Islam Mohamed a passionate freelancer bringing you creative and future design. i'm experienced in designing and developing web and desktop applications including full front end design</p>
+        </div>
+       
+    </section>
+ 
+
+     <div id="pg3" class="sec carouselItem d-flex  align-items-center justify-content-center">
+         <div class="content d-flex flex-column align-items-center justify-content-between" [ngClass]="clicked? 'hidePg3Container' : ''"> 
+            <img id="backG" src="../../../assets/work.png.jpg" alt="" class="img-fluid">
+            <div id="contRight" class="w-75 d-flex flex-column align-items-start justify-content-center">
+                <div>
+                    <h1 class="text-uppercase fw-bold">work</h1>
+                    <h3 class="text-capitalize">dig into my universe</h3>
+                    <p>This is a collection of apps and websites i have made</p>
+                </div>
+                <div id="projectsContainer" class="d-flex flex-row ">
+                    <button class="btn btn-warning px-4 text-white fw-bold" (click)="toggleState()">Explore</button>
+                    <button class="btn btn-danger px-2 cv"><a class="text-decoration-none text-white fw-bold" href="../../../assets/Islam Mohamed V2.pdf" download="">Download CV</a></button>
+                </div>
+                
+            </div>
+         </div>
+
+         <div class="projects d-flex flex-column justify-content-center align-items-center" [ngClass]="clicked? 'showPg3Project' : '' ">
+             <div id="workContInfo" class="d-flex flex-column justify-content-center align-items-center">
+                 <h1 class="fw-bold">My Work</h1>
+                 <ul id="list" class="porjectsList m-0 list-unstyled d-none justify-content-center align-items-center">
+                    <li data-cat=".all" class="link text-decoration-none text-dark px-1 active toggleListEffect">All</li>
+                     <span></span>
+                     <span></span>
+                     <li data-cat=".UI" class="link text-decoration-none text-dark  px-1">UI/UX</li>
+                     <span></span>
+                     <span></span>
+                     <li data-cat=".MEAN" class="link text-decoration-none text-dark  px-1">MEAN Stack</li>
+                 </ul>
+             </div>
+
+
+             <div class="w-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="img-slide d-flex">
+
+                    <div id="slide1" class="slide active UI all">
+                        <img class="img-fluid" src="../../../assets/Portfolio.PNG" alt="">
+                        <a href="http://nti-project.com/" target="_blank" class="info text-decoration-none text-center d-flex justify-content-center align-items-center">
+                            <label class="text-white">Portfolio Web</label>
+                        </a >
+                    </div>
+                    
+                    <div id="slide2" class="slide UI all">
+                        <img class="img-fluid " src="../../../assets/E-commerce SS.jpg" alt="">
+                        <a href="http://nti-project.com/" target="_blank" class="info text-center d-flex justify-content-center align-items-center">
+                            <label class="text-white">E-commerce SS Web</label>
+                        </a>
+                    </div>
+    
+    
+                    <div id="slide3" class="slide UI all">
+                        <img class="img-fluid " src="../../../assets/Travel Co. Web.png" alt="">
+                        <div class="info text-center d-flex justify-content-center align-items-center">
+                            <label class="text-white">Travel Co. Web</label>
+                        </div>
+                    </div>
+    
+                    <div id="slide4" class="slide UI all">
+                        <img class="img-fluid " src="../../../assets/Co.png" alt="">
+                        <div class="info text-center d-flex justify-content-center align-items-center">
+                            <label class="text-white">Co. Web</label>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div id="arrowCont" class="arrow-cont d-flex flex-row justify-content-between align-items-center">
+                    <button id="arrowPrev"><i  class="fa-solid fa-arrow-left"></i></button>
+                    <button id="arrowNex"><i  class="fa-solid fa-arrow-right"></i></button>
+                </div>
+    
+    
+                <div id="slidersHolder" class="btn-sliders d-flex align-items-center justify-content-center">
+                    <button class="btn-slide active"></button>
+                    <button class="btn-slide"></button>
+                    <button class="btn-slide"></button>
+                    <button class="btn-slide"></button>
+                </div>
+        
+    
+             </div>
+
+                </div>
+            </div>
+
+
+     <div id="pg4" class="sec carouselItem d-flex flex-column align-items-center justify-content-start">
+         <div class="leftCont d-flex flex-column align-items-start justify-content-center">
+             <h1 class="text-white text-uppercase fw-bold">contact</h1>
+             <h3 class="text-warning text-capitalize">you got a problem to solve?</h3>
+             <p class="text-white w-75">Get your space suits ready and tell me your ideas to develope your dream application</p>
+             <a href="mailto:IslamMoOMa95@gmail.com" class="text-decoration-none text-danger my-1"><i class="fa-solid fa-envelope"></i> IslamMoOMa95@gmail.com</a>
+             <a href="tel:+9710505578216" class="text-decoration-none text-danger my-1"><i class="fa-solid fa-mobile-screen-button"></i> +971-0505578216</a>
+         </div>
+         <button id="contactBtn" class="btn btn-warning px-4 text-white fw-bold" (click)="contact()">Contact</button>
+
+         <form class="rightCont form-Cont d-flex flex-column justify-content-center align-items-center" [ngClass]="contactClicked? 'showForm' : '' ">
+             <div class="form-Cont d-flex flex-column justify-content-center align-items-center">
+                <button id="close" (click)="closeForm($event)"><i class="fa-solid fa-xmark"></i></button>
+                <div id="formCont" class=" d-flex flex-column justify-content-center align-items-start">
+                    <label class="text-white text-capitalize my-2" >name</label>
+                    <input type="text" class="text-white">
+                    <label class="text-white text-capitalize my-2" >email</label>
+                    <input type="email" class="text-white">
+                    <label class="text-white text-capitalize my-2">message</label>
+                    <textarea name="" id="" cols="30" rows="4" class="text-white" ></textarea>
+                    <button class="btn btn-warning px-4 me-auto fw-bold text-white" >Send</button>
+                </div>
+             </div>
+            
+           
+         </form>
+
+     </div>
+
+
+     <div class="navFixed d-none flex-row justify-content-start align-items-center">
+        <div class="carouselBtnCont d-flex flex-column justify-content-around align-items-center">
+            <a href="#pg1" class="carouselBtn selectedCarouselBtn active"></a>
+            <a href="#pg2" class="carouselBtn"></a>
+            <a href="#pg3" class="carouselBtn"></a>
+            <a href="#pg4" class="carouselBtn"></a>
+        </div>
+     </div>
+</section>
+

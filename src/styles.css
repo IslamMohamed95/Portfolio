@@ -1,0 +1,366 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@media(min-width:375px){
+    #pg2 img {
+        width: 50% !important;
+    }
+
+
+}
+
+
+@media(min-width:768px){
+    #nav {
+      padding: 1% 3% !important;
+    }
+
+    #normalList {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        position: unset !important;
+        height: fit-content !important;
+        width: fit-content !important;
+        border-radius: unset !important;
+        background-color: transparent !important;
+        width: 45% !important;
+    }
+
+
+    #normalList ul {
+        flex-direction: row !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        width: 100% !important;
+    }
+
+    #normalList ul a {
+        margin: 0 4% !important;
+    }
+
+    #normalList ul a li::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0 !important;
+        width: 0 !important;
+        height: 1px;
+        background-color: rgb(253, 172, 72);
+        transition: all 0.5s ease-in-out;
+    }
+
+    #normalList ul a li {
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        font-size: 18px !important;
+    }
+
+    #normalList ul a li::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0 !important;
+        width: 0 !important;
+        height: 1px;
+        background-color: darkorange;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #normalList ul a:hover li::before,
+    #normalList ul a:hover li,
+    #normalList ul a:hover li::after {
+        width: 100% !important;
+    }
+
+    .fa-github {
+        margin: 0 !important;
+        font-size: 35px !important;
+    }
+
+    #shape {
+        display: none !important;
+    }
+
+
+
+    /*---------------- Section 1 PG2 ------------------*/
+    #pg2 {
+        flex-direction: row-reverse !important;
+        justify-content: space-between !important;
+        padding: 4% auto !important;
+    }
+
+    #pg2 img {
+        width: 70% !important;
+    }
+
+
+    /*----------------- Section 1 PG3 ------------------*/
+    #pg3 .content {
+        flex-direction: row !important;
+        width: 90% !important;
+    }
+
+    #pg3 #contRight {
+        width: 40% !important;
+    }
+
+    #pg3 #projectsContainer .cv{
+        width: 130px !important;
+    }
+
+
+
+    #pg3 h3 {
+        margin-bottom: 0 !important;
+    }
+
+    #pg3 p {
+        margin-top: 2% !important;
+    }
+
+
+    #pg3 #workContInfo h1{
+        margin-bottom: 2% !important;
+        margin-top: 8% !important;
+    }
+
+    #pg3 #list {
+        display: flex !important;
+    }
+
+
+    #pg3 #arrowCont {
+        display: none !important;
+    }
+
+    #pg3 #slidersHolder {
+        display: none !important;
+    }
+
+    #pg3 .img-slide {
+        width: 100% !important;
+        height: 100vh;
+        position: unset !important;
+        margin-top: 5% !important;
+        align-items: flex-start !important;
+    }
+
+    #pg3 .slide {
+        position: unset !important;
+        clip-path: unset !important;
+        transition: unset !important;
+        margin: 0px !important;
+
+    }
+
+    #pg3 .slide img {
+        border-radius: 0 !important;
+    }
+
+    #pg3 #slide1,
+    #pg3 #slide2,
+    #pg3 #slide3,
+    #pg3 #slide4 {
+        width: 80% !important;
+        height: 60% !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        border-top-right-radius: 35% !important;
+        border-bottom-left-radius: 35% !important;
+        overflow: hidden !important;
+        margin: 0 2% !important;
+    }
+
+  
+
+    #pg3 .slide .info {
+        padding: 0 1.5% !important;
+        font-size: 18px !important;
+    }
+
+    #pg3 .slide.active {
+        clip-path: unset !important;
+    }
+
+    /*---------------- Section 1 PG4 ------------------*/
+    #pg4 {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    #pg4 .leftCont {
+        margin: 0 !important;
+        width: 55% !important;
+    }
+
+    #pg4 .leftCont a {
+        font-size: 20px !important;
+    }
+
+    #pg4 form {
+        position: unset !important;
+        visibility: visible !important;
+        width: 50% !important;
+        z-index: 0 !important;
+        opacity: 1 !important;
+        background-color: transparent !important;
+    }
+
+    #pg4 #formCont {
+        width: 90% !important;
+    }
+
+    #pg4 #contactBtn {
+        display: none;
+    }
+
+    #pg4 #close {
+        display: none !important;
+    }
+
+}
+
+@media(min-width:992px){
+    #nav {
+        padding: 0.5% 3% !important;
+    }
+
+    #normalList {
+        width: 50% !important;
+    }
+
+    #normalList ul a li {
+        font-size: 25px !important;
+    }
+
+    .fa-github {
+        font-size: 55px !important;
+    }
+
+    /*---------------- Section 1 PG1 ------------------*/
+    #pg1 h1 {
+        text-align: center !important;
+        font-size: 45px !important;
+    }
+
+    /*---------------- Section 1 PG1 ------------------*/
+
+    #pg2 .cont h1 {
+        font-size: 60px !important;
+        margin-bottom: 4% !important;
+    }
+
+    #pg2 .cont h3 {
+        font-size: 40px !important;
+    }
+
+    #pg2 .cont p {
+        font-size: 20px !important;
+    }
+
+
+    /*---------------- Section 1 PG2 ------------------*/
+
+    #pg3 .content {
+        justify-content: space-around !important;
+        margin: 1% 0 0 0 !important;
+    }
+
+    #pg3 #backG {
+        width: 35% !important;
+        margin: 0 !important;
+    }
+
+    #pg3 h1 {
+        font-size: 60px !important;
+    }
+
+    #pg3 h3 {
+        font-size: 40px !important;
+        padding: 1% 0 !important;
+    }
+
+    #pg3 p {
+        margin-top: 2% !important;
+        font-size: 20px !important;
+    }
+
+    #pg3 button {
+        font-size: 20px !important;
+    }
+
+    #pg3 #projectsContainer .cv {
+        width: 180px !important;
+    }
+
+    #pg3 #slide1,
+    #pg3 #slide2,
+    #pg3 #slide3,
+    #pg3 #slide4  {
+        width: 250px;
+        height: 200px;
+    }
+
+
+    /*---------------- Section 1 PG2 ------------------*/
+    #pg4 h1 {
+        font-size: 60px !important;
+    }
+
+    #pg4 h3 {
+        font-size: 40px !important;
+    }
+
+    #pg4 p {
+        font-size: 20px !important;
+    }
+
+    #pg4 form {
+        margin-top: 7% !important;
+    }
+
+    #pg4 #formCont label {
+        font-size: 20px !important;
+        font-weight: bold;
+    } 
+
+    #pg4 #formCont input {
+        font-size: 20px !important;
+    }
+
+    #pg4 #formCont button {
+        font-size: 20px !important;
+    }
+
+
+      /*-------------  Public Carousel --------------*/
+
+      #fullpage .navFixed {
+        display: flex !important;
+    }
+}
+
+@media(min-width:1200px){
+    #normalList {
+        width: 40% !important;
+    }
+
+    /*--------------- Section 1 PG4 --------------*/
+    #pg4 form  label {
+        font-size: 25px !important;
+    }
+
+    #pg4 form input {
+        font-size: 25px !important;
+    }
+
+    #pg4 form button {
+        font-size: 25px !important;
+        width: 160px;
+    }
+
+}
+

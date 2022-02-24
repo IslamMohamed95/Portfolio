@@ -1,0 +1,25 @@
+<section>
+    <nav id="nav" class="nav py-2 px-3 d-flex flex-row align-items-center justify-content-between">
+
+        <div class="left text-danger text-uppercase fs-2" >
+            <a href="#pg1" class="text-decoration-none text-danger"><span class="fw-bolder">loma</span> studio</a>
+        </div>
+
+        <div id="normalList" class="normalList w-100 right d-flex flex-column-reverse justify-content-center align-items-center" [ngClass]="navState? 'showListCont' : '' ">
+                <ul id="navList" class=" list-unstyled d-flex flex-column justify-content-center align-items-center my-0" [ngClass]="navState? 'showList' : '' ">
+                    <a href="#pg2" class="text-decoration-none text-white" (click)="toggleState()"><li class="text-uppercase">about</li></a>
+                    <a href="#pg3" class="text-decoration-none text-white" (click)="toggleState()"><li class="text-uppercase">work</li></a>
+                    <a href="#pg4" class="text-decoration-none text-white" (click)="toggleState()"><li class="text-uppercase">contact</li></a>
+                </ul>
+                <a id="iconGitHub" href="https://github.com/IslamMohamed95" target="_blank" class="text-decoration-none"><i  class="fa-brands  fa-github text-warning"></i></a>
+        </div>
+
+
+        <div id="shape" class="d-flex flex-column justify-content-center align-items-center" (click)="showList()">
+            <div id="top-dash"></div>
+            <div id="middle-dash"></div>
+            <div id="bottom-dash"></div>
+        </div>
+
+    </nav>
+</section>
