@@ -64,7 +64,7 @@ function Projects({ target }) {
           <ul>
             <li>
               <a
-                href="https://mo-cha-social-web-app.vercel.app/"
+                href="https://mo-cha-client.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
