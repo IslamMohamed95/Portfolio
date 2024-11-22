@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --page-color1: rgb(103, 71, 189);
+  --page-color2: rgb(166, 185, 79);
+}
+a {
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  transition: color 0.5s ease-in-out;
+}
+
+@media (min-width: 320px) {
+  .Intro img {
+    width: 40%;
+    height: 40%;
+    z-index: 4;
+  }
+  .MobContainer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .App {
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+  }
+  .Frame {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .MobContainer {
+    display: none;
+  }
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .Frame {
+    display: block;
+  }
+  .Header .logo:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .Header ul i:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .Frame:hover .frameOne div:first-child {
+    background-position: left;
+  }
+  .Frame:hover .frameOne div:last-child {
+    background-position: top;
+  }
+  .Frame:hover .frameTwo div:first-child {
+    background-position: right;
+  }
+  .Frame:hover .frameTwo div:last-child {
+    background-position: bottom;
+  }
+  .Menu ul li:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+    color: white;
+  }
+  .Menu ul li:hover:after {
+    width: 70%;
+    background-position: right;
+  }
+  .Projects li:hover {
+    cursor: pointer;
+  }
+  .Projects li:hover a {
+    color: white;
+  }
+  .Projects li:hover:before {
+    background-position: right;
+  }
+}
+
+@media (min-width: 1440px) {
+  .text-line text {
+    font-size: 4.5em;
+  }
+}

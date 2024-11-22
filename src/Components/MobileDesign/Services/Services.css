@@ -1,0 +1,96 @@
+.Services {
+  margin-top: 15%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Services h1 {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10%;
+  font-size: 2em;
+}
+.Services .container {
+  position: relative;
+  width: 90%;
+  padding: 5%;
+}
+.Services .container .content {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.Services .container .content div {
+  margin: 1.5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 100px;
+  background-color: rgba(185, 185, 185, 0.1);
+  color: rgb(197, 197, 197);
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.Services .one {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Services .two {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.Services .one div:first-child {
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background-image: linear-gradient(
+    to left,
+    var(--page-color1),
+    var(--page-color2)
+  );
+}
+.Services .two div:first-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    var(--page-color1),
+    var(--page-color2)
+  );
+}
+.Services .one div:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 2px;
+  background-image: linear-gradient(
+    to top,
+    var(--page-color1),
+    var(--page-color2)
+  );
+}
+.Services .two div:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 2px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--page-color1),
+    var(--page-color2)
+  );
+}

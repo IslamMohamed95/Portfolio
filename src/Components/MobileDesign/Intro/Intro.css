@@ -1,0 +1,78 @@
+.Intro {
+  position: relative;
+  margin-top: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Intro div:first-child {
+  position: absolute;
+  top: -28px;
+  left: 23%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--page-color2);
+  z-index: 0;
+}
+
+.Intro div:last-child {
+  position: absolute;
+  bottom: -12px;
+  right: 25%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--page-color1);
+}
+.IntroContent {
+  margin-top: 5%;
+  padding: 5% 10%;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.3;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  color: rgb(182, 182, 182);
+}
+.CV {
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+}
+.CV button {
+  position: relative;
+  width: 110px;
+  padding: 3%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to left, var(--page-color1), var(--page-color2))
+    1 1 1 1;
+  color: white;
+  font-weight: bold;
+}
+
+.CV button::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -25%;
+  background-color: var(--page-color2);
+  border-radius: 50%;
+}
+.CV button::after {
+  content: "";
+  position: absolute;
+  right: -25%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--page-color1);
+}

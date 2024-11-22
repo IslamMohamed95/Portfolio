@@ -1,0 +1,88 @@
+.Menu {
+  position: relative;
+}
+
+.Menu h1 {
+  font-size: 2.8em;
+  color: rgb(199, 199, 199);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.Menu .list {
+  position: relative;
+  padding: 8px;
+}
+.Menu .list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  height: 70%;
+  border-top-left-radius: 30px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  background: linear-gradient(
+      to top,
+      var(--page-color1),
+      var(--page-color2),
+      var(--page-color2),
+      var(--page-color1)
+    )
+    border-box;
+  background-size: 100% 200%;
+  mask: linear-gradient(#000000 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  transition: all 0.5s ease-in-out;
+}
+
+.Menu .list:hover::before {
+  background-position: bottom;
+}
+.Menu ul {
+  list-style: none;
+  padding-left: 20px;
+}
+.Menu ul li {
+  position: relative;
+  font-weight: lighter;
+  font-size: 1.2em;
+  margin: 12% 0;
+  width: 100%;
+  color: rgb(177, 177, 177);
+  transition: all 0.5s ease-in-out;
+}
+
+.Menu ul li::after {
+  position: absolute;
+  content: "";
+  bottom: -4px;
+  left: 0;
+  width: var(--width, 50%);
+  transform: scale(1);
+  height: 2px;
+  border-radius: 15px;
+  background: var(
+    --color,
+    linear-gradient(
+      to left,
+      var(--page-color1),
+      var(--page-color2),
+      var(--page-color2),
+      var(--page-color1)
+    )
+  );
+  background-size: 200%;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.textEffect {
+  transform: scale(0.95) !important;
+  color: white !important;
+}
