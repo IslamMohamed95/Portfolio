@@ -2,12 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Menu.css";
 
 function Menu({ target, setTarget }) {
-  let text = [
-    "Prefabricated Web App",
-    "MoCha Social Media App",
-    "Todo List App",
-    "Smart Calculator App",
-  ];
+  let text = ["Academic Center", "Construction Company", "Social Media App"];
   const [ele, setEle] = useState([]);
   useEffect(() => {
     setEle(document.querySelectorAll(".op"));

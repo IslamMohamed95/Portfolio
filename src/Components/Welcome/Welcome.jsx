@@ -15,13 +15,13 @@ function Welcome({ target }) {
         </text>
       </svg>
       <p data-aos="zoom-in">
-        My name is Islam Mohamed, I'm a full-stack developer (MongoDB,
-        ExpressJS, ReactJS, NodeJS) based in Dubai, I have developed many types
-        of web application.
-        <br />
-        I'm passionate about cutting-edg, pixel-perfect, beautiful interfaces,
-        Friendly user apps, enhance applications performance, simple and
-        creative designs.
+        I'm Islam Mohamed a passionate Full Stack Developer with over 4 years of
+        hands-on experience building dynamic, scalable web applications using
+        the MERN stack. With a background in Communication Engineering (Class of
+        2018), he blends strong technical expertise with a problem-solving
+        mindset and a commitment to clean, efficient code. At 30, Islam brings
+        both maturity and innovation, delivering modern digital solutions that
+        drive real impact.
       </p>
       <button>
         <a

@@ -1,136 +1,145 @@
-.Projects {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  color: rgb(189, 189, 189);
-  transition: all 0.5s ease-in-out;
-}
-.hideProjects {
-  opacity: 0;
-}
-.Projects > div:nth-child(1),
-.Projects > div:nth-child(2),
-.Projects > div:nth-child(3),
-.Projects > div:nth-child(4) {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transform: scale(0);
-  transition: all 0.5s ease-in-out;
-}
+@media (min-width: 1024px) {
+  .Projects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    color: rgb(189, 189, 189);
+    transition: all 0.5s ease-in-out;
+  }
+  .hideProjects {
+    opacity: 0;
+  }
+  .Projects > div:nth-child(1),
+  .Projects > div:nth-child(2),
+  .Projects > div:nth-child(3),
+  .Projects > div:nth-child(4) {
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+  }
 
-.show {
-  transform: scale(1) !important    ;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
+  .show {
+    transform: scale(1) !important    ;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 
-.Projects h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(199, 199, 199);
-  margin-bottom: 15px;
-  font-size: 3em;
-  font-weight: lighter;
-}
-.Projects div > div {
-  position: relative;
-  margin-left: 50px;
-  width: 90%;
-  font-size: 15px;
-  line-height: 1.3em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.Projects div > div::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -30px;
-  height: 100%;
-  width: 3px;
-  border-radius: 10px;
-  background-image: linear-gradient(
-    to top,
-    var(--page-color1),
-    var(--page-color2)
-  );
-  margin-right: 5px;
-}
-.Projects ul {
-  width: fit-content;
-  padding-top: 18px;
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.Projects li {
-  position: relative;
-  font-size: 22px;
-  margin-right: 20px;
-}
-
-.Projects li::before {
-  position: absolute;
-  background: var(
-    --color,
-    linear-gradient(
-      to left,
+  .Projects h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+  .Projects div > div {
+    position: relative;
+    margin-left: 35px;
+    font-weight: lighter;
+    width: 90%;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .Projects div > div span {
+    font-weight: bold;
+    color: white;
+  }
+  .Projects div > div::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -30px;
+    height: 100%;
+    width: 3px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      to top,
       var(--page-color1),
-      var(--page-color2),
-      var(--page-color2),
-      var(--page-color1)
-    )
-  );
-  background-size: 200%;
-  bottom: -5px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  border-radius: 10px;
-  transition: all 0.5s ease-in-out;
-}
-.Projects #techs,
-.Projects #techs2,
-.Projects #techs3,
-.Projects #techs4 {
-  list-style: none;
-  transform: translateX(50px) translateY(10px);
-}
-.Projects #techs li::before,
-.Projects #techs2 li::before,
-.Projects #techs3 li::before,
-.Projects #techs4 li::before {
-  display: none !important;
-}
-.Projects #techs li,
-.Projects #techs2 li,
-.Projects #techs3 li,
-.Projects #techs4 li {
-  font-size: 2.5em;
-}
-.Projects #techs li:first-child,
-.Projects #techs3 li:first-child,
-.Projects #techs4 li:first-child {
-  color: #61dbfb;
-}
-.Projects #techs2 li:first-child {
-  color: #dd1b16;
-}
-.Projects #techs li:nth-child(2),
-.Projects #techs2 li:nth-child(2) {
-  color: #3c873a;
-}
-.Projects #techs li:nth-child(3),
-.Projects #techs2 li:nth-child(3),
-.Projects #techs3 li:nth-child(2),
-.Projects #techs4 li:nth-child(2) {
-  color: #563d7c;
+      var(--page-color2)
+    );
+    margin-right: 5px;
+  }
+  .Projects ul {
+    width: fit-content;
+    padding-top: 18px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Projects li {
+    position: relative;
+    font-size: 1.2em;
+    margin-right: 20px;
+  }
+
+  .Projects li::before {
+    position: absolute;
+    background: var(
+      --color,
+      linear-gradient(
+        to left,
+        var(--page-color1),
+        var(--page-color2),
+        var(--page-color2),
+        var(--page-color1)
+      )
+    );
+    background-size: 200%;
+    bottom: -5px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  .Projects #techs,
+  .Projects #techs2,
+  .Projects #techs3,
+  .Projects #techs4 {
+    list-style: none;
+    transform: translateX(50px) translateY(10px);
+  }
+  .Projects #techs li::before,
+  .Projects #techs2 li::before,
+  .Projects #techs3 li::before,
+  .Projects #techs4 li::before {
+    display: none !important;
+  }
+  .Projects #techs li,
+  .Projects #techs2 li,
+  .Projects #techs3 li,
+  .Projects #techs4 li {
+    font-size: 2.5em;
+  }
+  .Projects #techs li:first-child,
+  .Projects #techs3 li:first-child,
+  .Projects #techs4 li:first-child {
+    color: #61dbfb;
+  }
+  .Projects #techs2 li:first-child {
+    color: #dd1b16;
+  }
+  .Projects #techs li:nth-child(2),
+  .Projects #techs2 li:nth-child(2) {
+    color: #3c873a;
+  }
+  .Projects #techs li:nth-child(3),
+  .Projects #techs2 li:nth-child(3),
+  .Projects #techs3 li:nth-child(2),
+  .Projects #techs4 li:nth-child(2) {
+    color: #563d7c;
+  }
 }

@@ -1,9 +1,21 @@
+@media (min-width: 1024px) {
+  .Menu ul li {
+    position: relative;
+    font-weight: lighter;
+    font-size: 1em;
+    margin: 20px 0;
+    width: fit-content;
+    color: rgb(177, 177, 177);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
 .Menu {
   position: relative;
 }
 
 .Menu h1 {
-  font-size: 2.8em;
+  font-size: 2.5em;
   color: rgb(199, 199, 199);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -47,15 +59,6 @@
 .Menu ul {
   list-style: none;
   padding-left: 20px;
-}
-.Menu ul li {
-  position: relative;
-  font-weight: lighter;
-  font-size: 1.2em;
-  margin: 12% 0;
-  width: 100%;
-  color: rgb(177, 177, 177);
-  transition: all 0.5s ease-in-out;
 }
 
 .Menu ul li::after {

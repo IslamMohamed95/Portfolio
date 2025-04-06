@@ -2,171 +2,146 @@ import React from "react";
 import "./Projects.css";
 
 function Projects({ target }) {
+  let projects = [
+    {
+      title: "📚 Fekra Center",
+      content: (
+        <p>
+          <span>Target Audience:</span>
+          <br />
+          - Offers free online sessions for primary and preparatory school
+          students.
+          <br />
+          <span>Modern & Responsive Design:</span>
+          <br />
+          - Clean and engaging interface optimized for all devices.
+          <br />
+          - User-friendly experience tailored for students and parents.
+          <br />
+          <span>Integrated Dashboard:</span>
+          <br />
+          - Full backend control for administrators.
+          <br />
+          - Supports CRUD operations for managing courses, sessions, and user
+          data.
+          <br />
+          <span>Educational Focus:</span>
+          <br />
+          - Enables scalable and structured digital learning aligned with
+          academic needs.
+          <br />
+          <span>Business Value:</span>
+          <br />- Combines accessibility, performance, and management tools for
+          a complete e-learning solution.
+        </p>
+      ),
+      techs: [
+        <i className="fa-brands fa-react" />,
+        <i className="fa-brands fa-node" />,
+        <i className="fa-brands fa-bootstrap" />,
+      ],
+      website: "https://housed.vercel.app/",
+      github: "https://github.com/IslamMohamed95/House-Design-Client",
+    },
+    {
+      title: "🏚️ House Design",
+      content: (
+        <p>
+          <span>Industry Focus:</span>
+          <br />
+          - Designed for a company specializing in prefabricated construction
+          services.
+          <br />
+          <span>Modern & Responsive Design:</span>
+          <br />
+          - Clean, user-friendly interface with intuitive navigation optimized
+          for all devices.
+          <br />
+          <span>Integrated CRM System:</span>
+          <br />
+          - Custom-built backend for internal use. Supports full CRUD operations
+          tailored to the company’s service model. Enhances project management
+          and administrative control.
+          <br />
+          <span>Client Portal Access:</span>
+          <br />- Allows clients to securely log in. Track real-time progress of
+          their ongoing projects. Improves transparency and communication
+          throughout all construction stages.
+        </p>
+      ),
+      techs: [
+        <i className="fa-brands fa-react" />,
+        <i className="fa-brands fa-node" />,
+        <i className="fa-brands fa-bootstrap" />,
+      ],
+      website: "https://housed.vercel.app/",
+      github: "https://github.com/IslamMohamed95/House-Design-Client",
+    },
+    {
+      title: "🗨️ MoCha",
+      content: (
+        <p>
+          <span>
+            Custom-built social media platform inspired by Facebook, designed
+            with simplicity and ease of use in mind.
+          </span>
+          <br />
+          <span>Features:</span>
+          <br />
+          -clean and intuitive UI, eliminating unnecessary complexity for a
+          smooth user experience.
+          <br />
+          - Supports full post management including create, edit, and delete
+          functionalities.
+          <br />
+          - Enables users to add or remove friends, enhancing social interaction
+          across the platform.
+          <br />
+          - Allows users to edit personal profiles, including updating personal
+          information and uploading profile images.
+          <br />
+          -Built to demonstrate core social media functionalities within a
+          streamlined environment.
+        </p>
+      ),
+      techs: [
+        <i className="fa-brands fa-react" />,
+        <i className="fa-brands fa-node" />,
+        <i className="fa-brands fa-bootstrap" />,
+      ],
+      website: "https://housed.vercel.app/",
+      github: "https://github.com/IslamMohamed95/House-Design-Client",
+    },
+  ];
   return (
     <div className={target === "intro" ? "Projects hideProjects" : "Projects"}>
-      <div className="project">
-        <h1>Prefabricated Web</h1>
-        <div>
-          Responsive website for prefabricated construction company with full
-          access to control all the data through the website starting with :-
-          <br />
-          - Website to view all the company projects and modules that can be
-          provided
-          <br />
-          - Login to dash board for admin and clients also
-          <br /> - Overview for all salesmen performance monthly and yearly
-          <br />
-          - Overview for the total performance according to the number of
-          projects still in progress and the completed projects
-          <br />
-          - Ability to create new or edit admin, salesmen, and contract (note :
-          access to change for admins only) <br />
-          -Client Page for review his own projects and ability to pause any
-          projects according to any type of reasons
-          <br />
-          (note: the reason must be explained) Activate to view larger image,
-          <ul>
-            <li>
-              <a href="https://www.housed.ae/" target="_blank" rel="noreferrer">
-                View Site
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/IslamMohamed95/Prefab_Construction_Co"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
-            </li>
+      {projects.map((p, i) => (
+        <div className="project" key={i}>
+          <h1>{p.title}</h1>
+          <div>
+            {p.content}
+            <ul>
+              <li>
+                <a href={p.website} target="_blank" rel="noreferrer">
+                  View Site
+                </a>
+              </li>
+              <li>
+                <a href={p.github} target="_blank" rel="noreferrer">
+                  Github
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul id="techs">
+            {p.techs.map((t, i) => (
+              <React.Fragment>
+                <li key={i}>{t}</li>
+              </React.Fragment>
+            ))}
           </ul>
         </div>
-        <ul id="techs">
-          <li>
-            <i className="fa-brands fa-react"></i>
-          </li>
-          <li>
-            <i className="fa-brands fa-node"></i>
-          </li>
-          <li>
-            <i className="fa-brands fa-bootstrap"></i>
-          </li>
-        </ul>
-      </div>
-      <div className="project">
-        <h1>MoCha Social Media</h1>
-        <div>
-          Social Media web application for interaction with other users same as
-          any social media applications. you can create a new account and ,
-          login, creating posts and comments, Add and delete friends and
-          chatting
-          <ul>
-            <li>
-              <a
-                href="https://mo-cha-client.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Site
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/IslamMohamed95/MoCha-Social-Web-App"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
-            </li>
-          </ul>
-        </div>
-        <ul id="techs2">
-          <li>
-            <i className="fa-brands fa-angular"></i>
-          </li>
-          <li>
-            <i className="fa-brands fa-node"></i>
-          </li>
-          <li>
-            <i className="fa-brands fa-bootstrap"></i>
-          </li>
-        </ul>
-      </div>
-      <div className="project">
-        <h1>Todo List</h1>
-        <div>
-          TodoList with modern and creative design design.It has many actions
-          can be taken like add or delete a todo. you can make a filtration
-          according to todo status
-          <ul>
-            <li>
-              <a
-                href="https://comfy-pithivier-1d9f74.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Site
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/IslamMohamed95/Calculator"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
-            </li>
-          </ul>
-        </div>
-        <ul id="techs3">
-          <li>
-            <i className="fa-brands fa-react"></i>
-          </li>
-          <li>
-            <i className="fa-brands fa-bootstrap"></i>
-          </li>
-        </ul>
-      </div>
-      <div className="project">
-        <h1>Smart Calculator</h1>
-        <div>
-          Smart calculator with history for all of previous operations and
-          giving you the ability to edit any previous operation if you messed
-          any number also you can reset all the operations like normal
-          calculator
-          <ul>
-            <li>
-              <a
-                href="https://profound-froyo-27b081.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Site
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/IslamMohamed95/TodoList"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
-            </li>
-          </ul>
-        </div>
-        <ul id="techs4">
-          <li>
-            <i className="fa-brands fa-react"></i>
-          </li>
-          <li>
-            <i className="fa-brands fa-bootstrap"></i>
-          </li>
-        </ul>
-      </div>
+      ))}
     </div>
   );
 }

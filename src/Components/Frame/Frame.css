@@ -1,3 +1,81 @@
+@media (min-width: 1024px) {
+  .Frame .frameOne div:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 220px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--page-color1),
+      var(--page-color2),
+      var(--page-color2),
+      var(--page-color1)
+    );
+    border-top-left-radius: 10px;
+    background-position: bottom;
+    background-size: 100% 200%;
+    border: none;
+    transition: background-position 0.3s ease-in-out;
+  }
+
+  .Frame .frameOne div:first-child {
+    width: 18%;
+    height: 10px;
+    background-image: linear-gradient(
+      to left,
+      var(--page-color1),
+      var(--page-color2),
+      var(--page-color2),
+      var(--page-color1)
+    );
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: 200%;
+    background-position: right;
+    border: none;
+    transition: background-position 0.3s ease-in-out;
+  }
+
+  .Frame .frameTwo div:first-child {
+    width: 18%;
+    height: 10px;
+    text-align: right;
+    background-image: linear-gradient(
+      to left,
+      var(--page-color1),
+      var(--page-color2),
+      var(--page-color2),
+      var(--page-color1)
+    );
+
+    background-size: 200%;
+    background-position: left;
+    border: none;
+    transition: background-position 0.3s ease-in-out;
+    border-bottom-right-radius: 10px;
+  }
+  .Frame .frameTwo div:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 220px;
+    background-image: linear-gradient(
+      to top,
+      var(--page-color1),
+      var(--page-color2),
+      var(--page-color2),
+      var(--page-color1)
+    );
+    background-position: top;
+    background-size: 100% 200%;
+    border: none;
+    transition: background-position 0.3s ease-in-out;
+    border-bottom-right-radius: 10px;
+  }
+}
+
 .Frame {
   width: 90%;
   height: 85%;
@@ -6,43 +84,6 @@
 
 .Frame .frameOne {
   position: relative;
-}
-
-.Frame .frameOne div:first-child {
-  width: 18%;
-  height: 15px;
-  background-image: linear-gradient(
-    to left,
-    var(--page-color1),
-    var(--page-color2),
-    var(--page-color2),
-    var(--page-color1)
-  );
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-size: 200%;
-  background-position: right;
-  border: none;
-  transition: background-position 0.3s ease-in-out;
-}
-.Frame .frameOne div:last-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 230px;
-  background-image: linear-gradient(
-    to bottom,
-    var(--page-color1),
-    var(--page-color2),
-    var(--page-color2),
-    var(--page-color1)
-  );
-  border-top-left-radius: 10px;
-  background-position: bottom;
-  background-size: 100% 200%;
-  border: none;
-  transition: background-position 0.3s ease-in-out;
 }
 
 .Frame .frameTwo {
@@ -56,44 +97,6 @@
   transition: all 2s ease-in-out;
 }
 
-.Frame .frameTwo div:first-child {
-  width: 18%;
-  height: 15px;
-  text-align: right;
-  background-image: linear-gradient(
-    to left,
-    var(--page-color1),
-    var(--page-color2),
-    var(--page-color2),
-    var(--page-color1)
-  );
-
-  background-size: 200%;
-  background-position: left;
-  border: none;
-  transition: background-position 0.3s ease-in-out;
-  border-bottom-right-radius: 10px;
-}
-.Frame .frameTwo div:last-child {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 15px;
-  height: 230px;
-  background-image: linear-gradient(
-    to top,
-    var(--page-color1),
-    var(--page-color2),
-    var(--page-color2),
-    var(--page-color1)
-  );
-  background-position: top;
-  background-size: 100% 200%;
-  border: none;
-  transition: background-position 0.3s ease-in-out;
-  border-bottom-right-radius: 10px;
-}
-
 .Frame .Container {
   position: absolute;
   width: 100%;
@@ -102,13 +105,13 @@
   left: 0;
   padding: 0 5%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .Frame .Container .left {
   position: relative;
-  width: 70%;
+  width: 65%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -119,6 +122,7 @@
 }
 
 .Frame .Container .right {
+  width: 25%;
   transform: scale(1);
   opacity: 1;
   visibility: visible;
