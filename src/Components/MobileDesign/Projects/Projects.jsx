@@ -47,8 +47,8 @@ function Projects({ project }) {
         <i className="fa-brands fa-node" />,
         <i className="fa-brands fa-bootstrap" />,
       ],
-      website: "https://housed.vercel.app/",
-      github: "https://github.com/IslamMohamed95/House-Design-Client",
+      website: "https://fekra-nine.vercel.app/",
+      github: "https://github.com/IslamMohamed95/Fekra-Center-Client",
     },
     {
       title: "🏚️ House Design",
@@ -116,8 +116,8 @@ function Projects({ project }) {
         <i className="fa-brands fa-node" />,
         <i className="fa-brands fa-bootstrap" />,
       ],
-      website: "https://housed.vercel.app/",
-      github: "https://github.com/IslamMohamed95/House-Design-Client",
+      website: "https://mo-cha-client.vercel.app/",
+      github: "https://github.com/IslamMohamed95/MoCha-Client",
     },
   ];
   return (
